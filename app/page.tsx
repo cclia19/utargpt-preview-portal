@@ -20,8 +20,7 @@ type TileProps = {
 };
 
 const CHATBOT_URL = "https://utargpt-2.vercel.app";
-const FEEDBACK_URL = "#";
-const BUG_URL = "#";
+const TICKET_URL = "https://app.inistate.com/#/join?id=BCCbf2zj3&code=9394518A3C7320A047555E928A6CDEA98082F9ABBCDAC3F7C7A6B2E568D747801CBF82AB7C486EF1D4061AD05D26EA542C1D599927DF5FE0D87BD871234F3B48";
 
 function Tile({
   title,
@@ -288,7 +287,7 @@ export default function Home() {
               </a>
 
               <a
-                href={FEEDBACK_URL}
+                href={TICKET_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-medium text-neutral-700 transition hover:bg-neutral-50"

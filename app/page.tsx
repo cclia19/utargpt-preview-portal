@@ -368,20 +368,30 @@ export default function Home() {
             </div>
           </Tile>
 
-         <Tile title="Feedback" subtitle="Input" className="md:col-span-4">
-          <div className="space-y-4">
-          <p className="text-base leading-7 text-neutral-600">
-          Structured feedback and bug reporting will be opened after the initial
-        preview round.
-          </p>
+          <Tile title="Feedback" subtitle="Input" className="md:col-span-4">
+            <div className="space-y-4">
+              <p className="text-base leading-7 text-neutral-600">
+                Use the ticketing system to submit feedback, report issues, or request improvements.
+              </p>
 
               <div className="flex flex-wrap gap-3">
-                <div className="rounded-full bg-neutral-100 px-4 py-2 text-sm text-neutral-700">
-                  Feedback form coming soon
-                </div>
-                <div className="rounded-full bg-neutral-100 px-4 py-2 text-sm text-neutral-700">
-                  Bug report channel coming soon
-                </div>
+                <a
+                  href={TICKET_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-neutral-700"
+                >
+                  Open Ticketing System
+                </a>
+
+                <a
+                  href={TICKET_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition hover:bg-neutral-50"
+                >
+                  Submit Feedback or Report Issue
+                </a>
               </div>
             </div>
           </Tile>
